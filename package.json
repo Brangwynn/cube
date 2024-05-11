@@ -1,0 +1,22 @@
+{
+  "name": "cube",
+  "version": "1.0.0",
+  "description": "Simple WebGL interactive cube",
+  "main": "Interactive_3D_Model_Viewer_2_with_Cube_WithZ_Buffer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Brangwynn/cube.git"
+  },
+  "author": "Brangwynn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Brangwynn/cube/issues"
+  },
+  "homepage": "https://github.com/Brangwynn/cube#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
