@@ -1,10 +1,13 @@
 
 const canvas = document.getElementById('glCanvas');
-const gl = canvas.getContext('webgl2');
+// Ensure the canvas has correct intrinsic dimensions
+canvas.width = 750;
+canvas.height = 750;
 
+const gl = canvas.getContext('webgl2');
 if (!gl) {
-    alert('WebGL is not available');
-    throw('WebGL is not available');
+    alert('WebGL 2 is not supported by your browser.');
+    throw new Error('WebGL 2 is not supported');
 }
 
 // Define vertex and fragment shaders

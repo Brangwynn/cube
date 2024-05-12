@@ -1,17 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Interactive 3D Model Viewer</title>
-        <script src="https://cdn.jsdelivr.net/npm/gl-matrix@2.4.0/dist/gl-matrix-min.js"></script>
-        <style>
-            canvas { display: block; margin: 0 auto; }        
-        </style>
-    </head>
-    <body>
-		<h1>Cubes are Cool</h1>
-        <canvas id="glCanvas" width="750" height="750"></canvas>        
-        <script src="Interactive_3D_Model_Viewer_2_with_Cube_WithZ_Buffer.js"></script>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive 3D Model Viewer</title>
+    <script src="https://cdn.jsdelivr.net/npm/gl-matrix@2.4.0/dist/gl-matrix-min.js"></script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #info {
+            width: 20%;
+            padding: 20px;
+            margin-right: 20px;
+            border-right: 2px solid #ccc;
+            overflow-y: auto;
+        }
+        #container {
+            display: flex;
+            align-items: center;
+        }
+        canvas {
+            width: 750px; /* Visual size of the canvas */
+            height: 750px; /* Visual size of the canvas */
+        }
+        #backButton {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button id="backButton" onclick="window.close();">Back</button>
+    <div id="info">
+        <h2>Project Explanation</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+            eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+            deserunt mollit anim id est laborum.</p>
+    </div>
+    <div id="container">
+        <canvas id="glCanvas"></canvas>
+    </div>
+    <script src="Interactive_3D_Model_Viewer_2_with_Cube_WithZ_Buffer.js"></script>
+</body>
 </html>
