@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/textured-paper.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+#info {
+    width: 20%;
+    padding: 20px;
+    margin-right: 20px;
+    border-right: 2px solid #ccc;
+    overflow-y: auto;
+}
+#container {
+    display: flex;
+    align-items: center;
+}
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-variant: small-caps;
+    font-stretch: ultra-expanded;
+    
+    
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-stretch: semi-condensed;
+}
+canvas {
+    width: 750px; /* Visual size of the canvas */
+    height: 750px; /* Visual size of the canvas */
+}
+#backButton {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
