@@ -256,7 +256,6 @@ canvas.addEventListener('mousemove', handleMouseMove);
 
 const newCubesRender = () => {
     // See: https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/clearColor
-    gl.clearColor(0.0, 0.0, 0.0, 1.0); // Set background color to black
     gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
     gl.enable(gl.DEPTH_TEST);
     gl.depthFunc(gl.LESS);

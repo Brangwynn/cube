@@ -5,35 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive 3D Model Viewer</title>
     <script src="https://cdn.jsdelivr.net/npm/gl-matrix@2.4.0/dist/gl-matrix-min.js"></script>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        #info {
-            width: 20%;
-            padding: 20px;
-            margin-right: 20px;
-            border-right: 2px solid #ccc;
-            overflow-y: auto;
-        }
-        #container {
-            display: flex;
-            align-items: center;
-        }
-        canvas {
-            width: 750px; /* Visual size of the canvas */
-            height: 750px; /* Visual size of the canvas */
-        }
-        #backButton {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="main.css" />
 </head>
 <body>
     <button id="backButton" onclick="window.close();">Back</button>
